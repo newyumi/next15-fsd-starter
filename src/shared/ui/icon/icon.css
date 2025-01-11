@@ -1,0 +1,13 @@
+.icon {
+  flex-shrink: 0;
+  vertical-align: middle;
+  fill: currentColor;
+
+  &:not([role='button']) {
+    pointer-events: none;
+  }
+
+  &[role='button'] {
+    cursor: pointer;
+  }
+}

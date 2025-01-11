@@ -1,0 +1,13 @@
+export { default as close } from "./close.svg";
+export { default as arrowDownS } from "./arrow-down-s.svg";
+export { default as arrowRightS } from "./arrow-right-s.svg";
+export { default as arrowLeftS } from "./arrow-left-s.svg";
+export { default as arrowUpS } from "./arrow-up-s.svg";
+export { default as menu } from "./menu.svg";
+export { default as globe } from "./globe.svg";
+export { default as checkDone } from "./check-done.svg";
+export { default as backDelete } from "./back-delete.svg";
+export { default as facebookIcon } from "./facebook-icon.svg";
+export { default as kakaoTalkIcon } from "./kakao-talk-icon.svg";
+export { default as googleIcon } from "./google-icon.svg";
+export { default as appleIcon } from "./apple-icon.svg";
