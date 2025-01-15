@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Button from "@/shared/ui/button";
 import { Icon } from "@/shared/ui/icon";
 import Link from "next/link";
@@ -54,7 +53,7 @@ export default function ResetPassword() {
     <>
       {step === 1 && (
         <>
-          <Link href="/login" className="h-12 flex items-center justify-end px-2">
+          <Link href="/login" className="h-12 flex items-center justify-end px-4">
             <Icon name="close" size="md" className="block desktop:hidden mx-2" />
             <Icon name="close" size="lg" className="hidden desktop:block" />
           </Link>
@@ -79,9 +78,14 @@ export default function ResetPassword() {
 
       {step === 2 && (
         <>
-          <div className="h-12 flex items-center px-2" onClick={() => setStep(1)}>
+          <div className="h-12 flex items-center justify-between px-2" onClick={() => setStep(1)}>
             <Icon name="backDelete" size="md" className="block desktop:hidden mx-2" />
             <Icon name="backDelete" size="lg" className="hidden desktop:block" />
+
+            <Link href="/login" className="h-12 flex items-center justify-end px-2">
+              <Icon name="close" size="md" className="block desktop:hidden mx-2" />
+              <Icon name="close" size="lg" className="hidden desktop:block" />
+            </Link>
           </div>
 
           <div className="py-300 mb-300 px-250 desktop:px-300 text-heading2 desktop:text-heavy3 text-g-900">

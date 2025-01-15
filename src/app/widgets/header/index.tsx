@@ -1,5 +1,6 @@
 "use client";
 
+import React, { useState } from "react";
 import Button from "@/shared/ui/button";
 import { Dialog, DialogTrigger, DialogContent, DialogTitle } from "@/shared/ui/dialog";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/shared/ui/dropdown-menu";
@@ -7,7 +8,6 @@ import { Icon } from "@/shared/ui/icon";
 import { Sheet, SheetContent, SheetTitle } from "@/shared/ui/sheet";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
 
 const LANGUAGES = ["English", "한국어"] as const;
 
@@ -126,9 +126,9 @@ const MobileView = ({
               <nav>
                 <ul className="text-g-900">
                   <MenuItem href="#" label="Language" onClick={() => setIsLanguageDialogOpen(true)} selectedLanguage={selectedLanguage} />
-                  <MenuItem href="/signup" label="Sign up" />
-                  <MenuItem href="/help" label="Help" />
-                  <MenuItem href="/setting" label="Setting" />
+                  <MenuItem href="/" label="Sign up" />
+                  <MenuItem href="/" label="Help" />
+                  <MenuItem href="/" label="Setting" />
                 </ul>
               </nav>
             </div>

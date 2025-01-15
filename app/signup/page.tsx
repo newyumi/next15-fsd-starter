@@ -78,7 +78,7 @@ export default function Login() {
   return (
     <>
       <div className="py-400 mt-300 mb-300 px-250 desktop:px-300 text-heading2 desktop:text-heavy3 text-g-900">
-        Hi, <span className="text-sb-550">login</span>
+        Hi, <span className="text-sb-550">Signup</span>
       </div>
 
       <div className="px-250">
@@ -89,17 +89,12 @@ export default function Login() {
           onChange={(e) => setId(e.target.value)}
         />
         <input
-          className="w-full border border-g-150 placeholder-g-350 h-16 rounded-md text-body2 px-200 mb-2 focus:border-sb-550 outline-none"
+          className="w-full border border-g-150 placeholder-g-350 h-16 rounded-md text-body2 px-200 mb-[60px] focus:border-sb-550 outline-none"
           placeholder="Password"
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <Link href="/reset-password" className="flex justify-end mb-250">
-          <Button variant="text" buttonType="tertiary" size="small">
-            Forgot password?
-          </Button>
-        </Link>
         <Button fullWidth={true} size="xlarge" disabled={!isValidLogin()} onClick={login}>
           Login
         </Button>
@@ -113,10 +108,10 @@ export default function Login() {
       </div>
 
       <div className="text-center">
-        <span className="text-g-400 text-body4 mr-2">New to this site?</span>
-        <Link href="/signup">
+        <span className="text-g-400 text-body4 mr-2">Do you already have an account?</span>
+        <Link href="/login">
           <Button variant="text" buttonType="secondary" size="medium">
-            Sign up
+            Login
           </Button>
         </Link>
       </div>

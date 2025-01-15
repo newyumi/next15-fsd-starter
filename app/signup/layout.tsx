@@ -1,4 +1,4 @@
-export default function ResetPAsswordLayout({
+export default function SignupLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
